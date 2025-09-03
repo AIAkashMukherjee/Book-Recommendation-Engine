@@ -13,11 +13,7 @@ git clone https://github.com/AIAkashMukherjee/Book-Recommendation-Engine.git
 
 #### Step 1 -> Create Enviornment
 
-```
-
 virtualenv my_env
-
-```
 
 ```
 source my_env/bin/activate

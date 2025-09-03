@@ -1,0 +1,45 @@
+Metadata-Version: 2.4
+Name: src
+Version: 0.0.1
+Summary: A small local packages for ML based books recommendations
+Home-page: https://github.com/AIAkashMukherjee/Book-Recommendation-Engine.git
+Author: Akash Mukherjee
+License: GNU
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Dynamic: author
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license
+Dynamic: license-file
+Dynamic: requires-python
+Dynamic: summary
+
+# Book-Recommendation-Engine
+
+
+## How to Run
+
+### Steps
+
+Clone the repo
+
+```
+git clone https://github.com/AIAkashMukherjee/Book-Recommendation-Engine.git
+```
+
+#### Step 1 -> Create Enviornment
+
+virtualenv my_env
+
+```
+source my_env/bin/activate
+```
+
+#### Step 2 -> Install the requirements
+
+```
+pip install - requirements.txt
+```
