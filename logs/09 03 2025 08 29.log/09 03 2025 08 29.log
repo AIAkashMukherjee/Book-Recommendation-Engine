@@ -1,8 +1,0 @@
-[ 2025-09-03 08:29:09,113 ] 17 root - INFO - ====================Data Ingestion log started.==================== 
-[ 2025-09-03 08:29:09,113 ] 35 root - INFO - Data Ingestion Config: DatasetConfig(dataset_download_url='https://github.com/AIAkashMukherjee/Book-Recommendation-Engine/raw/e7b547e69d56ade27cd5c89e6c2550e6d1659525/data/books_data.zip', raw_data_dir='artifacts/dataset/raw_data', ingested_dir='artifacts/dataset/ingested_data')
-[ 2025-09-03 08:29:09,113 ] 34 root - INFO - Downloading data from https://github.com/AIAkashMukherjee/Book-Recommendation-Engine/raw/e7b547e69d56ade27cd5c89e6c2550e6d1659525/data/books_data.zip into file artifacts/dataset/raw_data/books_data.zip
-[ 2025-09-03 08:29:14,109 ] 36 root - INFO - Downloaded data from https://github.com/AIAkashMukherjee/Book-Recommendation-Engine/raw/e7b547e69d56ade27cd5c89e6c2550e6d1659525/data/books_data.zip into file artifacts/dataset/raw_data/books_data.zip
-[ 2025-09-03 08:29:14,356 ] 54 root - INFO - Extracting zip file: artifacts/dataset/raw_data/books_data.zip into dir: artifacts/dataset/ingested_data
-[ 2025-09-03 08:29:14,356 ] 63 root - INFO - ====================Data Ingestion log completed.==================== 
-
-
