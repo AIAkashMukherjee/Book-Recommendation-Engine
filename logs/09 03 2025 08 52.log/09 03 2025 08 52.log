@@ -1,0 +1,116 @@
+[ 2025-09-03 08:52:55,817 ] 146 root - INFO - Model Recommendation Config: ModelRecommendationConfig(book_name_serialized_objects='artifacts/serialized_objects/book_names.pkl', book_pivot_serialized_objects='artifacts/serialized_objects/book_pivot.pkl', final_rating_serialized_objects='artifacts/serialized_objects/final_rating.pkl', trained_model_path='artifacts/trained_model/model.pkl')
+[ 2025-09-03 08:53:34,344 ] 146 root - INFO - Model Recommendation Config: ModelRecommendationConfig(book_name_serialized_objects='artifacts/serialized_objects/book_names.pkl', book_pivot_serialized_objects='artifacts/serialized_objects/book_pivot.pkl', final_rating_serialized_objects='artifacts/serialized_objects/final_rating.pkl', trained_model_path='artifacts/trained_model/model.pkl')
+[ 2025-09-03 08:53:34,344 ] 17 root - INFO - ====================Data Ingestion log started.==================== 
+[ 2025-09-03 08:53:34,344 ] 35 root - INFO - Data Ingestion Config: DatasetConfig(dataset_download_url='https://github.com/AIAkashMukherjee/Book-Recommendation-Engine/raw/e7b547e69d56ade27cd5c89e6c2550e6d1659525/data/books_data.zip', raw_data_dir='artifacts/dataset/raw_data', ingested_dir='artifacts/dataset/ingested_data')
+[ 2025-09-03 08:53:34,344 ] 62 root - INFO - Data Validation Config: DataValidationConfig(clean_data_dir='artifacts/dataset/clean_data', books_csv_file='artifacts/dataset/ingested_data/BX-Books.csv', ratings_csv_file='artifacts/dataset/ingested_data/BX-Book-Ratings.csv', serialized_objects_dir='artifacts/serialized_objects')
+[ 2025-09-03 08:53:34,344 ] 86 root - INFO - Data Transformation Config: DataTransformationConfig(clean_data_file_path='artifacts/dataset/clean_data/clean_data.csv', transformed_data_dir='artifacts/dataset/transformed_data')
+[ 2025-09-03 08:53:34,345 ] 62 root - INFO - Data Validation Config: DataValidationConfig(clean_data_dir='artifacts/dataset/clean_data', books_csv_file='artifacts/dataset/ingested_data/BX-Books.csv', ratings_csv_file='artifacts/dataset/ingested_data/BX-Book-Ratings.csv', serialized_objects_dir='artifacts/serialized_objects')
+[ 2025-09-03 08:53:34,345 ] 114 root - INFO - Model Trainer Config: ModelTrainerConfig(transformed_data_file_dir='artifacts/dataset/transformed_data/transformed_data.pkl', trained_model_dir='artifacts/trained_model', trained_model_name='model.pkl')
+[ 2025-09-03 08:53:34,345 ] 34 root - INFO - Downloading data from https://github.com/AIAkashMukherjee/Book-Recommendation-Engine/raw/e7b547e69d56ade27cd5c89e6c2550e6d1659525/data/books_data.zip into file artifacts/dataset/raw_data/books_data.zip
+[ 2025-09-03 08:53:36,577 ] 36 root - INFO - Downloaded data from https://github.com/AIAkashMukherjee/Book-Recommendation-Engine/raw/e7b547e69d56ade27cd5c89e6c2550e6d1659525/data/books_data.zip into file artifacts/dataset/raw_data/books_data.zip
+[ 2025-09-03 08:53:36,786 ] 54 root - INFO - Extracting zip file: artifacts/dataset/raw_data/books_data.zip into dir: artifacts/dataset/ingested_data
+[ 2025-09-03 08:53:36,786 ] 63 root - INFO - ====================Data Ingestion log completed.==================== 
+
+
+[ 2025-09-03 08:53:36,786 ] 77 root - INFO - ====================Data Validation log started.==================== 
+[ 2025-09-03 08:53:37,760 ] 26 root - INFO -  Shape of ratings data file: (1149780, 3)
+[ 2025-09-03 08:53:37,760 ] 27 root - INFO -  Shape of books data file: (271360, 8)
+[ 2025-09-03 08:53:38,230 ] 58 root - INFO -  Shape of the final clean dataset: (96245, 9)
+[ 2025-09-03 08:53:38,420 ] 63 root - INFO - Saved cleaned data to artifacts/dataset/clean_data
+[ 2025-09-03 08:53:38,439 ] 69 root - INFO - Saved final_rating serialization object to artifacts/serialized_objects
+[ 2025-09-03 08:53:38,468 ] 79 root - INFO - ====================Data Validation log completed.==================== 
+
+
+[ 2025-09-03 08:53:38,468 ] 54 root - INFO - ====================Data Transformation log started.==================== 
+[ 2025-09-03 08:53:38,584 ] 26 root - INFO -  Shape of book pivot table: (1733, 893)
+[ 2025-09-03 08:53:38,600 ] 32 root - INFO - Saved pivot table data to artifacts/dataset/transformed_data
+[ 2025-09-03 08:53:38,602 ] 40 root - INFO - Saved book_names serialization object to artifacts/serialized_objects
+[ 2025-09-03 08:53:38,611 ] 45 root - INFO - Saved book_pivot serialization object to artifacts/serialized_objects
+[ 2025-09-03 08:53:38,612 ] 56 root - INFO - ====================Data Transformation log completed.==================== 
+
+
+[ 2025-09-03 08:53:38,612 ] 41 root - INFO - ====================Model Trainer log started.==================== 
+[ 2025-09-03 08:53:38,621 ] 32 root - INFO - Saving final model to artifacts/trained_model/model.pkl
+[ 2025-09-03 08:53:38,621 ] 43 root - INFO - ====================Model Trainer log completed.==================== 
+
+
+[ 2025-09-03 08:53:38,621 ] 71 root - INFO - Recommended successfully!
+[ 2025-09-03 08:55:50,939 ] 146 root - INFO - Model Recommendation Config: ModelRecommendationConfig(book_name_serialized_objects='artifacts/serialized_objects/book_names.pkl', book_pivot_serialized_objects='artifacts/serialized_objects/book_pivot.pkl', final_rating_serialized_objects='artifacts/serialized_objects/final_rating.pkl', trained_model_path='artifacts/trained_model/model.pkl')
+[ 2025-09-03 08:56:34,836 ] 146 root - INFO - Model Recommendation Config: ModelRecommendationConfig(book_name_serialized_objects='artifacts/serialized_objects/book_names.pkl', book_pivot_serialized_objects='artifacts/serialized_objects/book_pivot.pkl', final_rating_serialized_objects='artifacts/serialized_objects/final_rating.pkl', trained_model_path='artifacts/trained_model/model.pkl')
+[ 2025-09-03 08:56:40,976 ] 146 root - INFO - Model Recommendation Config: ModelRecommendationConfig(book_name_serialized_objects='artifacts/serialized_objects/book_names.pkl', book_pivot_serialized_objects='artifacts/serialized_objects/book_pivot.pkl', final_rating_serialized_objects='artifacts/serialized_objects/final_rating.pkl', trained_model_path='artifacts/trained_model/model.pkl')
+[ 2025-09-03 08:56:40,977 ] 17 root - INFO - ====================Data Ingestion log started.==================== 
+[ 2025-09-03 08:56:40,977 ] 35 root - INFO - Data Ingestion Config: DatasetConfig(dataset_download_url='https://github.com/AIAkashMukherjee/Book-Recommendation-Engine/raw/e7b547e69d56ade27cd5c89e6c2550e6d1659525/data/books_data.zip', raw_data_dir='artifacts/dataset/raw_data', ingested_dir='artifacts/dataset/ingested_data')
+[ 2025-09-03 08:56:40,977 ] 62 root - INFO - Data Validation Config: DataValidationConfig(clean_data_dir='artifacts/dataset/clean_data', books_csv_file='artifacts/dataset/ingested_data/BX-Books.csv', ratings_csv_file='artifacts/dataset/ingested_data/BX-Book-Ratings.csv', serialized_objects_dir='artifacts/serialized_objects')
+[ 2025-09-03 08:56:40,977 ] 86 root - INFO - Data Transformation Config: DataTransformationConfig(clean_data_file_path='artifacts/dataset/clean_data/clean_data.csv', transformed_data_dir='artifacts/dataset/transformed_data')
+[ 2025-09-03 08:56:40,978 ] 62 root - INFO - Data Validation Config: DataValidationConfig(clean_data_dir='artifacts/dataset/clean_data', books_csv_file='artifacts/dataset/ingested_data/BX-Books.csv', ratings_csv_file='artifacts/dataset/ingested_data/BX-Book-Ratings.csv', serialized_objects_dir='artifacts/serialized_objects')
+[ 2025-09-03 08:56:40,978 ] 114 root - INFO - Model Trainer Config: ModelTrainerConfig(transformed_data_file_dir='artifacts/dataset/transformed_data/transformed_data.pkl', trained_model_dir='artifacts/trained_model', trained_model_name='model.pkl')
+[ 2025-09-03 08:56:40,978 ] 34 root - INFO - Downloading data from https://github.com/AIAkashMukherjee/Book-Recommendation-Engine/raw/e7b547e69d56ade27cd5c89e6c2550e6d1659525/data/books_data.zip into file artifacts/dataset/raw_data/books_data.zip
+[ 2025-09-03 08:56:43,865 ] 36 root - INFO - Downloaded data from https://github.com/AIAkashMukherjee/Book-Recommendation-Engine/raw/e7b547e69d56ade27cd5c89e6c2550e6d1659525/data/books_data.zip into file artifacts/dataset/raw_data/books_data.zip
+[ 2025-09-03 08:56:44,079 ] 54 root - INFO - Extracting zip file: artifacts/dataset/raw_data/books_data.zip into dir: artifacts/dataset/ingested_data
+[ 2025-09-03 08:56:44,079 ] 63 root - INFO - ====================Data Ingestion log completed.==================== 
+
+
+[ 2025-09-03 08:56:44,079 ] 77 root - INFO - ====================Data Validation log started.==================== 
+[ 2025-09-03 08:56:45,052 ] 26 root - INFO -  Shape of ratings data file: (1149780, 3)
+[ 2025-09-03 08:56:45,052 ] 27 root - INFO -  Shape of books data file: (271360, 8)
+[ 2025-09-03 08:56:45,522 ] 58 root - INFO -  Shape of the final clean dataset: (96245, 9)
+[ 2025-09-03 08:56:45,709 ] 63 root - INFO - Saved cleaned data to artifacts/dataset/clean_data
+[ 2025-09-03 08:56:45,727 ] 69 root - INFO - Saved final_rating serialization object to artifacts/serialized_objects
+[ 2025-09-03 08:56:45,757 ] 79 root - INFO - ====================Data Validation log completed.==================== 
+
+
+[ 2025-09-03 08:56:45,757 ] 54 root - INFO - ====================Data Transformation log started.==================== 
+[ 2025-09-03 08:56:45,872 ] 26 root - INFO -  Shape of book pivot table: (1733, 893)
+[ 2025-09-03 08:56:45,884 ] 32 root - INFO - Saved pivot table data to artifacts/dataset/transformed_data
+[ 2025-09-03 08:56:45,885 ] 40 root - INFO - Saved book_names serialization object to artifacts/serialized_objects
+[ 2025-09-03 08:56:45,893 ] 45 root - INFO - Saved book_pivot serialization object to artifacts/serialized_objects
+[ 2025-09-03 08:56:45,894 ] 56 root - INFO - ====================Data Transformation log completed.==================== 
+
+
+[ 2025-09-03 08:56:45,894 ] 41 root - INFO - ====================Model Trainer log started.==================== 
+[ 2025-09-03 08:56:45,902 ] 32 root - INFO - Saving final model to artifacts/trained_model/model.pkl
+[ 2025-09-03 08:56:45,902 ] 43 root - INFO - ====================Model Trainer log completed.==================== 
+
+
+[ 2025-09-03 08:56:45,902 ] 71 root - INFO - Recommended successfully!
+[ 2025-09-03 08:58:50,672 ] 146 root - INFO - Model Recommendation Config: ModelRecommendationConfig(book_name_serialized_objects='artifacts/serialized_objects/book_names.pkl', book_pivot_serialized_objects='artifacts/serialized_objects/book_pivot.pkl', final_rating_serialized_objects='artifacts/serialized_objects/final_rating.pkl', trained_model_path='artifacts/trained_model/model.pkl')
+[ 2025-09-03 08:58:58,919 ] 146 root - INFO - Model Recommendation Config: ModelRecommendationConfig(book_name_serialized_objects='artifacts/serialized_objects/book_names.pkl', book_pivot_serialized_objects='artifacts/serialized_objects/book_pivot.pkl', final_rating_serialized_objects='artifacts/serialized_objects/final_rating.pkl', trained_model_path='artifacts/trained_model/model.pkl')
+[ 2025-09-03 08:59:00,044 ] 146 root - INFO - Model Recommendation Config: ModelRecommendationConfig(book_name_serialized_objects='artifacts/serialized_objects/book_names.pkl', book_pivot_serialized_objects='artifacts/serialized_objects/book_pivot.pkl', final_rating_serialized_objects='artifacts/serialized_objects/final_rating.pkl', trained_model_path='artifacts/trained_model/model.pkl')
+[ 2025-09-03 08:59:05,749 ] 146 root - INFO - Model Recommendation Config: ModelRecommendationConfig(book_name_serialized_objects='artifacts/serialized_objects/book_names.pkl', book_pivot_serialized_objects='artifacts/serialized_objects/book_pivot.pkl', final_rating_serialized_objects='artifacts/serialized_objects/final_rating.pkl', trained_model_path='artifacts/trained_model/model.pkl')
+[ 2025-09-03 08:59:05,750 ] 17 root - INFO - ====================Data Ingestion log started.==================== 
+[ 2025-09-03 08:59:05,750 ] 35 root - INFO - Data Ingestion Config: DatasetConfig(dataset_download_url='https://github.com/AIAkashMukherjee/Book-Recommendation-Engine/raw/e7b547e69d56ade27cd5c89e6c2550e6d1659525/data/books_data.zip', raw_data_dir='artifacts/dataset/raw_data', ingested_dir='artifacts/dataset/ingested_data')
+[ 2025-09-03 08:59:05,751 ] 62 root - INFO - Data Validation Config: DataValidationConfig(clean_data_dir='artifacts/dataset/clean_data', books_csv_file='artifacts/dataset/ingested_data/BX-Books.csv', ratings_csv_file='artifacts/dataset/ingested_data/BX-Book-Ratings.csv', serialized_objects_dir='artifacts/serialized_objects')
+[ 2025-09-03 08:59:05,751 ] 86 root - INFO - Data Transformation Config: DataTransformationConfig(clean_data_file_path='artifacts/dataset/clean_data/clean_data.csv', transformed_data_dir='artifacts/dataset/transformed_data')
+[ 2025-09-03 08:59:05,751 ] 62 root - INFO - Data Validation Config: DataValidationConfig(clean_data_dir='artifacts/dataset/clean_data', books_csv_file='artifacts/dataset/ingested_data/BX-Books.csv', ratings_csv_file='artifacts/dataset/ingested_data/BX-Book-Ratings.csv', serialized_objects_dir='artifacts/serialized_objects')
+[ 2025-09-03 08:59:05,751 ] 114 root - INFO - Model Trainer Config: ModelTrainerConfig(transformed_data_file_dir='artifacts/dataset/transformed_data/transformed_data.pkl', trained_model_dir='artifacts/trained_model', trained_model_name='model.pkl')
+[ 2025-09-03 08:59:05,751 ] 34 root - INFO - Downloading data from https://github.com/AIAkashMukherjee/Book-Recommendation-Engine/raw/e7b547e69d56ade27cd5c89e6c2550e6d1659525/data/books_data.zip into file artifacts/dataset/raw_data/books_data.zip
+[ 2025-09-03 08:59:08,281 ] 36 root - INFO - Downloaded data from https://github.com/AIAkashMukherjee/Book-Recommendation-Engine/raw/e7b547e69d56ade27cd5c89e6c2550e6d1659525/data/books_data.zip into file artifacts/dataset/raw_data/books_data.zip
+[ 2025-09-03 08:59:08,502 ] 54 root - INFO - Extracting zip file: artifacts/dataset/raw_data/books_data.zip into dir: artifacts/dataset/ingested_data
+[ 2025-09-03 08:59:08,502 ] 63 root - INFO - ====================Data Ingestion log completed.==================== 
+
+
+[ 2025-09-03 08:59:08,502 ] 77 root - INFO - ====================Data Validation log started.==================== 
+[ 2025-09-03 08:59:09,590 ] 26 root - INFO -  Shape of ratings data file: (1149780, 3)
+[ 2025-09-03 08:59:09,590 ] 27 root - INFO -  Shape of books data file: (271360, 8)
+[ 2025-09-03 08:59:10,147 ] 58 root - INFO -  Shape of the final clean dataset: (96245, 9)
+[ 2025-09-03 08:59:10,346 ] 63 root - INFO - Saved cleaned data to artifacts/dataset/clean_data
+[ 2025-09-03 08:59:10,365 ] 69 root - INFO - Saved final_rating serialization object to artifacts/serialized_objects
+[ 2025-09-03 08:59:10,398 ] 79 root - INFO - ====================Data Validation log completed.==================== 
+
+
+[ 2025-09-03 08:59:10,398 ] 54 root - INFO - ====================Data Transformation log started.==================== 
+[ 2025-09-03 08:59:10,517 ] 26 root - INFO -  Shape of book pivot table: (1733, 893)
+[ 2025-09-03 08:59:10,527 ] 32 root - INFO - Saved pivot table data to artifacts/dataset/transformed_data
+[ 2025-09-03 08:59:10,528 ] 40 root - INFO - Saved book_names serialization object to artifacts/serialized_objects
+[ 2025-09-03 08:59:10,531 ] 45 root - INFO - Saved book_pivot serialization object to artifacts/serialized_objects
+[ 2025-09-03 08:59:10,532 ] 56 root - INFO - ====================Data Transformation log completed.==================== 
+
+
+[ 2025-09-03 08:59:10,532 ] 41 root - INFO - ====================Model Trainer log started.==================== 
+[ 2025-09-03 08:59:10,541 ] 32 root - INFO - Saving final model to artifacts/trained_model/model.pkl
+[ 2025-09-03 08:59:10,541 ] 43 root - INFO - ====================Model Trainer log completed.==================== 
+
+
+[ 2025-09-03 08:59:10,541 ] 71 root - INFO - Recommended successfully!
+[ 2025-09-03 08:59:45,326 ] 146 root - INFO - Model Recommendation Config: ModelRecommendationConfig(book_name_serialized_objects='artifacts/serialized_objects/book_names.pkl', book_pivot_serialized_objects='artifacts/serialized_objects/book_pivot.pkl', final_rating_serialized_objects='artifacts/serialized_objects/final_rating.pkl', trained_model_path='artifacts/trained_model/model.pkl')
+[ 2025-09-03 08:59:46,342 ] 146 root - INFO - Model Recommendation Config: ModelRecommendationConfig(book_name_serialized_objects='artifacts/serialized_objects/book_names.pkl', book_pivot_serialized_objects='artifacts/serialized_objects/book_pivot.pkl', final_rating_serialized_objects='artifacts/serialized_objects/final_rating.pkl', trained_model_path='artifacts/trained_model/model.pkl')
